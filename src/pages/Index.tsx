@@ -39,7 +39,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-2">
-              <Icon name="Building2" className="h-8 w-8 text-blue-600" />
+              <Icon name="Building2" className="h-8 w-8 text-brand-blue" />
               <h1 className="text-2xl font-bold text-gray-900">
                 СтройМатериалы
               </h1>
@@ -47,37 +47,37 @@ const Index = () => {
             <nav className="hidden md:flex space-x-8">
               <a
                 href="#"
-                className="text-gray-700 hover:text-blue-600 font-medium"
+                className="text-gray-700 hover:text-brand-blue font-medium"
               >
                 Главная
               </a>
               <a
                 href="#"
-                className="text-gray-700 hover:text-blue-600 font-medium"
+                className="text-gray-700 hover:text-brand-blue font-medium"
               >
                 О компании
               </a>
               <a
                 href="#"
-                className="text-gray-700 hover:text-blue-600 font-medium"
+                className="text-gray-700 hover:text-brand-blue font-medium"
               >
                 Каталог
               </a>
               <a
                 href="#"
-                className="text-gray-700 hover:text-blue-600 font-medium"
+                className="text-gray-700 hover:text-brand-blue font-medium"
               >
                 Калькуляторы
               </a>
               <a
                 href="#"
-                className="text-gray-700 hover:text-blue-600 font-medium"
+                className="text-gray-700 hover:text-brand-blue font-medium"
               >
                 Доставка
               </a>
               <a
                 href="#"
-                className="text-gray-700 hover:text-blue-600 font-medium"
+                className="text-gray-700 hover:text-brand-blue font-medium"
               >
                 Контакты
               </a>
@@ -106,7 +106,10 @@ const Index = () => {
                 производителей. Быстрая доставка и профессиональная поддержка.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+                <Button
+                  size="lg"
+                  className="bg-brand-blue hover:bg-brand-blue/90"
+                >
                   Открыть каталог
                 </Button>
                 <Button variant="outline" size="lg">
@@ -161,7 +164,7 @@ const Index = () => {
                 <CardHeader className="text-center">
                   <Icon
                     name={item.icon}
-                    className="h-12 w-12 mx-auto text-blue-600 mb-4"
+                    className="h-12 w-12 mx-auto text-brand-blue mb-4"
                   />
                   <CardTitle className="text-lg">{item.title}</CardTitle>
                 </CardHeader>
@@ -217,14 +220,14 @@ const Index = () => {
               <div className="flex flex-col sm:flex-row gap-4 items-end">
                 <Button
                   onClick={calculateMaterial}
-                  className="bg-blue-600 hover:bg-blue-700"
+                  className="bg-brand-blue hover:bg-brand-blue/90"
                   disabled={!area || !material}
                 >
                   Рассчитать
                 </Button>
                 {result !== null && (
-                  <div className="p-4 bg-blue-50 rounded-lg flex-1">
-                    <p className="text-lg font-semibold text-blue-800">
+                  <div className="p-4 bg-brand-blue/10 rounded-lg flex-1">
+                    <p className="text-lg font-semibold text-brand-blue">
                       Необходимо: {result} {material === "primer" ? "л" : "кг"}
                     </p>
                   </div>
@@ -249,13 +252,13 @@ const Index = () => {
               </p>
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <div className="text-center p-4 bg-gray-50 rounded-lg">
-                  <div className="text-2xl font-bold text-blue-600 mb-2">
+                  <div className="text-2xl font-bold text-brand-blue mb-2">
                     15+
                   </div>
                   <div className="text-sm text-gray-600">лет на рынке</div>
                 </div>
                 <div className="text-center p-4 bg-gray-50 rounded-lg">
-                  <div className="text-2xl font-bold text-blue-600 mb-2">
+                  <div className="text-2xl font-bold text-brand-blue mb-2">
                     1000+
                   </div>
                   <div className="text-sm text-gray-600">
@@ -263,13 +266,13 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="text-center p-4 bg-gray-50 rounded-lg">
-                  <div className="text-2xl font-bold text-blue-600 mb-2">
+                  <div className="text-2xl font-bold text-brand-blue mb-2">
                     50+
                   </div>
                   <div className="text-sm text-gray-600">видов материалов</div>
                 </div>
                 <div className="text-center p-4 bg-gray-50 rounded-lg">
-                  <div className="text-2xl font-bold text-blue-600 mb-2">
+                  <div className="text-2xl font-bold text-brand-blue mb-2">
                     24/7
                   </div>
                   <div className="text-sm text-gray-600">поддержка</div>
@@ -278,7 +281,7 @@ const Index = () => {
             </div>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <Icon name="Shield" className="h-8 w-8 text-blue-600 mt-1" />
+                <Icon name="Shield" className="h-8 w-8 text-brand-blue mt-1" />
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">
                     Гарантия качества
@@ -289,7 +292,7 @@ const Index = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <Icon name="Truck" className="h-8 w-8 text-blue-600 mt-1" />
+                <Icon name="Truck" className="h-8 w-8 text-brand-blue mt-1" />
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">
                     Быстрая доставка
@@ -300,7 +303,7 @@ const Index = () => {
                 </div>
               </div>
               <div className="flex items-start space-x-4">
-                <Icon name="Users" className="h-8 w-8 text-blue-600 mt-1" />
+                <Icon name="Users" className="h-8 w-8 text-brand-blue mt-1" />
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">
                     Экспертная поддержка
